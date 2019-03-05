@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/myCardid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="3dp">
+           <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_background1"
+                android:padding="10dp">
+            <TextView
+                android:id="@+id/tournameTVID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="TourName"
+                android:gravity="center"
+                />
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   >
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:textSize="25sp"
+                       android:text="Started On:"
+                      android:gravity="center"
+                       />
+                   <TextView
+                       android:layout_weight=".6"
+                       android:id="@+id/startdateTvid"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:textSize="25sp"
+                       android:text="11/11/11"
+                       android:gravity="center"
+                       />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   >
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:textSize="25sp"
+                       android:text="Endeded On:"
+                       android:gravity="center"
+                       />
+                   <TextView
+                       android:layout_weight=".6"
+                       android:id="@+id/endDatetvId"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:textSize="25sp"
+                       android:text="11/11/11"
+                       android:gravity="center"
+                       />
+               </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+

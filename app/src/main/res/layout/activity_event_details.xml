@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background1"
+    tools:context=".EventDetailsActivity">
+    <LinearLayout
+        android:id="@+id/linearlayoutid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="3dp"
+            app:cardBackgroundColor="@color/backgroundcolor"
+            android:layout_margin="5dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_background1"
+                android:padding="4dp">
+
+
+                <TextView
+                    android:id="@+id/TourNameTVId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chittagong Tour"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+                <TextView
+
+                        android:id="@+id/FromToTvid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="From Dhaka to Comilla"
+                        android:textSize="20sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_weight=".6"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="Your Budget:"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/MYBudgetTvid"
+                        android:layout_weight=".4"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:textSize="25sp"
+                        android:text="10000$"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight=".6"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="Remaining Budget:"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/BudgetTvid"
+                        android:layout_weight=".4"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:textSize="25sp"
+                        android:text="10000$"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My All Expenses"
+            android:textSize="28sp"
+            android:gravity="center"
+            />
+
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/myrcyclrID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/floatingmenuid"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        app:menu_showShadow="true"
+        app:menu_fab_label=""
+        app:menu_openDirection="up">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addExpensemenuid"
+            app:fabSize="mini"
+            app:fab_label="Add New Expense"
+            android:src="@drawable/ic_create_black_24dp" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addmomentsmenuid"
+            app:fabSize="mini"
+            app:fab_label="View Moments Photo"
+            android:src="@drawable/ic_gallary_black_24dp"/>
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+</android.support.design.widget.CoordinatorLayout>

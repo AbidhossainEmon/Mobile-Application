@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundcolor"
+    android:layout_margin="5dp">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Expense"
+        android:textSize="30sp"
+        android:gravity="center"
+        />
+    <EditText
+        android:id="@+id/amountEtId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:inputType="number"
+        android:background="@drawable/customedittext"
+        android:layout_margin="10dp"
+        />
+    <EditText
+        android:id="@+id/descriptionEtid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:inputType="text"
+        android:background="@drawable/customedittext"
+        android:layout_margin="10dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        >
+        <Button
+            android:id="@+id/cancelbtnid"
+            android:layout_weight=".4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="cancel"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/custombutton"/>
+        <Button
+            android:id="@+id/addbtnid"
+            android:layout_weight=".4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="right"
+            android:background="@drawable/custombutton"/>
+
+    </LinearLayout>
+
+</LinearLayout>

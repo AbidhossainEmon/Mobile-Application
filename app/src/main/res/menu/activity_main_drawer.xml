@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_all_event"
+            android:icon="@drawable/ic_allevent_black_24dp"
+            android:title="My All Event" />
+        <item
+            android:id="@+id/nav_all_photo"
+            android:icon="@drawable/ic_gallary_black_24dp"
+            android:title="My All PhotoMoments" />
+        <item
+            android:id="@+id/nav_nearby"
+            android:icon="@drawable/ic_place_black_24dp"
+            android:title="My Nearby Place" />
+        <item
+            android:id="@+id/nav_weather"
+            android:icon="@drawable/ic_weather_black_24dp"
+            android:title="Weather Report" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

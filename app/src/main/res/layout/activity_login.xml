@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bacground"
+    tools:context=".LogIn_Activity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/loginemailETid"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Your Email"
+        android:textAlignment="center"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/customedittext"
+        android:layout_margin="10dp"
+        android:padding="3dp"
+      />
+    <EditText
+        android:id="@+id/loginpasswordETid"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Your Password"
+        android:textAlignment="center"
+        android:inputType="textPassword"
+        android:background="@drawable/customedittext"
+        android:layout_margin="10dp"
+        android:padding="3dp"
+        />
+    <Button
+        android:id="@+id/loginbtnid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:textColor="#56F714"
+        android:background="@drawable/custombutton"
+        android:layout_margin="10dp"
+        android:padding="3dp"
+        />
+
+
+       <TextView
+            android:id="@+id/signupTVid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Here? Sign UP"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#C7F714"
+            android:layout_margin="20dp"/>
+
+
+
+    
+</LinearLayout>
+   
+
+</RelativeLayout>
